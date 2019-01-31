@@ -8,13 +8,17 @@
 #include <GL/wglew.h>
 #include <SFML/Window.hpp>
 #include <SFML/OpenGL.hpp>
+#include <fstream>
 
-#include <Vector3.h>
-#include <Matrix3.h>
+#include "MyVector3.h"
+#include "MyMatrix3.h"
 
 using namespace std;
 using namespace sf;
-using namespace gpp;
+
+void matrixApp(MyMatrix3 t_matrix);
+
+std::string load_file(const std::string &src);
 
 class Game
 {

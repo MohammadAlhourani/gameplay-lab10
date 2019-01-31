@@ -38,9 +38,9 @@ typedef struct
 {
 	float coordinate[3];
 	float color[4];
-} Vertex;
+} Vert;
 
-Vertex vertex[36];
+Vert vertex[36];
 GLubyte triangles[36];
 
 /* Variable to hold the VBO identifier and shader data */
@@ -212,156 +212,6 @@ void Game::initialize()
 	vertex[35].coordinate[2] = 0.0f;
 	// sixth
 
-	vertex[0].color[0] = 1.1f;
-	vertex[0].color[1] = 1.0f;
-	vertex[0].color[2] = 0.0f;
-
-	vertex[1].color[0] = 1.2f;
-	vertex[1].color[1] = 1.0f;
-	vertex[1].color[2] = 0.0f;
-
-	vertex[2].color[0] = 1.3f;
-	vertex[2].color[1] = 1.0f;
-	vertex[2].color[2] = 0.0f;
-
-	vertex[3].color[0] = 1.4f;
-	vertex[3].color[1] = 1.0f;
-	vertex[3].color[2] = 0.0f;
-
-	vertex[4].color[0] = 1.5f;
-	vertex[4].color[1] = 1.0f;
-	vertex[4].color[2] = 0.0f;
-
-	vertex[5].color[0] = 1.6f;
-	vertex[5].color[1] = 1.0f;
-	vertex[5].color[2] = 0.0f;
-	//first face
-
-	vertex[6].color[0] = 0.1f;
-	vertex[6].color[1] = 1.0f;
-	vertex[6].color[2] = 1.0f;
-
-	vertex[7].color[0] = 0.5f;
-	vertex[7].color[1] = 1.0f;
-	vertex[7].color[2] = 0.5f;
-
-	vertex[8].color[0] = 0.3f;
-	vertex[8].color[1] = 1.0f;
-	vertex[8].color[2] = 1.0f;
-
-	vertex[9].color[0] = 0.4f;
-	vertex[9].color[1] = 1.0f;
-	vertex[9].color[2] = 0.0f;
-
-	vertex[10].color[0] = 0.5f;
-	vertex[10].color[1] = 1.0f;
-	vertex[10].color[2] = 0.0f;
-
-	vertex[11].color[0] = 0.6f;
-	vertex[11].color[1] = 1.0f;
-	vertex[11].color[2] = 0.0f;
-	//second face
-
-	vertex[12].color[0] = 0.1f;
-	vertex[12].color[1] = 1.0f;
-	vertex[12].color[2] = 0.0f;
-
-	vertex[13].color[0] = 0.2f;
-	vertex[13].color[1] = 1.0f;
-	vertex[13].color[2] = 0.0f;
-
-	vertex[14].color[0] = 0.3f;
-	vertex[14].color[1] = 1.0f;
-	vertex[14].color[2] = 0.0f;
-
-	vertex[15].color[0] = 0.4f;
-	vertex[15].color[1] = 1.0f;
-	vertex[15].color[2] = 0.0f;
-
-	vertex[16].color[0] = 0.5f;
-	vertex[16].color[1] = 1.0f;
-	vertex[16].color[2] = 0.0f;
-
-	vertex[17].color[0] = 0.6f;
-	vertex[17].color[1] = 1.0f;
-	vertex[17].color[2] = 0.0f;
-	//third
-
-	vertex[18].color[0] = 0.1f;
-	vertex[18].color[1] = 1.0f;
-	vertex[18].color[2] = 0.0f;
-
-	vertex[19].color[0] = 0.2f;
-	vertex[19].color[1] = 1.0f;
-	vertex[19].color[2] = 0.0f;
-
-	vertex[20].color[0] = 0.3f;
-	vertex[20].color[1] = 1.0f;
-	vertex[20].color[2] = 0.0f;
-
-	vertex[21].color[0] = 0.4f;
-	vertex[21].color[1] = 1.0f;
-	vertex[21].color[2] = 0.0f;
-
-	vertex[22].color[0] = 0.5f;
-	vertex[22].color[1] = 1.0f;
-	vertex[22].color[2] = 0.0f;
-
-	vertex[23].color[0] = 0.6f;
-	vertex[23].color[1] = 1.0f;
-	vertex[23].color[2] = 0.0f;
-	//fourth
-
-	vertex[24].color[0] = 0.1f;
-	vertex[24].color[1] = 1.0f;
-	vertex[24].color[2] = 1.0f;
-
-	vertex[25].color[0] = 0.2f;
-	vertex[25].color[1] = 1.0f;
-	vertex[25].color[2] = 1.0f;
-
-	vertex[26].color[0] = 0.3f;
-	vertex[26].color[1] = 1.0f;
-	vertex[26].color[2] = 1.0f;
-
-	vertex[27].color[0] = 0.4f;
-	vertex[27].color[1] = 1.0f;
-	vertex[27].color[2] = 1.0f;
-
-	vertex[28].color[0] = 0.5f;
-	vertex[28].color[1] = 0.0f;
-	vertex[28].color[2] = 1.0f;
-
-	vertex[29].color[0] = 0.6f;
-	vertex[29].color[1] = 0.0f;
-	vertex[29].color[2] = 1.0f;
-	//fifth
-
-	vertex[30].color[0] = 0.1f;
-	vertex[30].color[1] = 1.0f;
-	vertex[30].color[2] = 0.0f;
-
-	vertex[31].color[0] = 0.2f;
-	vertex[31].color[1] = 1.0f;
-	vertex[31].color[2] = 0.0f;
-
-	vertex[32].color[0] = 0.3f;
-	vertex[32].color[1] = 1.0f;
-	vertex[32].color[2] = 0.0f;
-
-	vertex[33].color[0] = 0.4f;
-	vertex[33].color[1] = 1.0f;
-	vertex[33].color[2] = 0.0f;
-
-	vertex[34].color[0] = 0.5f;
-	vertex[34].color[1] = 1.0f;
-	vertex[34].color[2] = 0.0f;
-
-	vertex[35].color[0] = 0.6f;
-	vertex[35].color[1] = 1.0f;
-	vertex[35].color[2] = 0.0f;
-	//sixth
-
 	triangles[0] = 0;   triangles[1] = 1;   triangles[2] = 2;
 	triangles[3] = 3;   triangles[4] = 4;   triangles[5] = 5;
 
@@ -396,20 +246,15 @@ void Game::initialize()
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLubyte) * 36, triangles, GL_STATIC_DRAW);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
-	/* Vertex Shader which would normally be loaded from an external file */
-	const char* vs_src = "#version 400\n\r"
-		"in vec4 sv_position;"
-		"in vec4 sv_color;"
-		"out vec4 color;"
-		"void main() {"
-		"	color = sv_color;"
-		"	gl_Position = sv_position;"
-		"}"; //Vertex Shader Src
+	string contentsVertFile = load_file("VertShader.txt");
+	//cout << contents << endl;
+
+	const char* Vert_Shader_pointer = contentsVertFile.c_str();
 
 	DEBUG_MSG("Setting Up Vertex Shader");
 
 	vsid = glCreateShader(GL_VERTEX_SHADER); //Create Shader and set ID
-	glShaderSource(vsid, 1, (const GLchar**)&vs_src, NULL); // Set the shaders source
+	glShaderSource(vsid, 1, (const GLchar**)&Vert_Shader_pointer, NULL); // Set the shaders source
 	glCompileShader(vsid); //Check that the shader compiles
 
 	//Check is Shader Compiled
@@ -424,19 +269,16 @@ void Game::initialize()
 		DEBUG_MSG("ERROR: Vertex Shader Compilation Error");
 	}
 
-	/* Fragment Shader which would normally be loaded from an external file */
-	const char* fs_src = "#version 400\n\r"
-		"in vec4 color;"
-		"out vec4 fColor;"
-		"void main() {"
-		"	fColor = vec4(0.0f, 1.0f, 0.0f, 1.0f);"
-		"}"; //Fragment Shader Src
+	string contentsFragFile = load_file("FragShader.txt");
+
+	const char* Frag_Shader_pointer = contentsFragFile.c_str();
 
 	DEBUG_MSG("Setting Up Fragment Shader");
 
 	fsid = glCreateShader(GL_FRAGMENT_SHADER);
-	glShaderSource(fsid, 1, (const GLchar**)&fs_src, NULL);
+	glShaderSource(fsid, 1, (const GLchar**)&Frag_Shader_pointer, NULL);
 	glCompileShader(fsid);
+
 	//Check is Shader Compiled
 	glGetShaderiv(fsid, GL_COMPILE_STATUS, &isCompiled);
 
@@ -502,18 +344,21 @@ void Game::update()
 		}
 	}
 
-	//Change vertex data
-	/*vertex[0].coordinate[0] += -0.0001f;
-	vertex[0].coordinate[1] += -0.0001f;
-	vertex[0].coordinate[2] += -0.0001f;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+	{
+		matrixApp(MyMatrix3::rotationY(0.0005));
+	}
 
-	vertex[1].coordinate[0] += -0.0001f;
-	vertex[1].coordinate[1] += -0.0001f;
-	vertex[1].coordinate[2] += -0.0001f;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+	{
+		matrixApp(MyMatrix3::rotationZ(0.0005));
+	}
 
-	vertex[2].coordinate[0] += -0.0001f;
-	vertex[2].coordinate[1] += -0.0001f;
-	vertex[2].coordinate[2] += -0.0001f;*/
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+	{
+		matrixApp(MyMatrix3::rotationX(0.0005));
+	}
+
 
 #if (DEBUG >= 2)
 	DEBUG_MSG("Update up...");
@@ -537,15 +382,15 @@ void Game::render()
 
 	/*	As the data positions will be updated by the this program on the
 		CPU bind the updated data to the GPU for drawing	*/
-	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * 36, vertex, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(Vert) * 36, vertex, GL_STATIC_DRAW);
 
 	/*	Draw Triangle from VBO	(set where to start from as VBO can contain
 		model components that 'are' and 'are not' to be drawn )	*/
 
 	// Set pointers for each parameter
 	// https://www.opengl.org/sdk/docs/man4/html/glVertexAttribPointer.xhtml
-	glVertexAttribPointer(positionID, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), 0);
-	glVertexAttribPointer(colorID, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), 0);
+	glVertexAttribPointer(positionID, 3, GL_FLOAT, GL_FALSE, sizeof(Vert), 0);
+	glVertexAttribPointer(colorID, 4, GL_FLOAT, GL_FALSE, sizeof(Vert), 0);
 
 	//Enable Arrays
 	glEnableVertexAttribArray(positionID);
@@ -566,19 +411,38 @@ void Game::unload()
 	glDeleteBuffers(1, vbo);
 }
 
-//std::string load_file(const std::strinf &src)
-//{
-// ifstream file;
-// file.open(((src).c_str()));
-// string output;
-// string line;
-// if(file.is_open())
-// {
-//  while(!file.eof())
-//  {
-//   getline(file, line);
-//		output.append(line + "\n2);
-//	}
-//}
-//return output;
-//}
+std::string load_file(const std::string &src)
+{
+	 ifstream file;
+	 file.open(((src).c_str()));
+	 string output;
+	 string line;
+
+	 char source;
+
+	if(file.is_open())
+	{
+		 while(!file.eof())
+		 {
+			 getline(file, line);
+			output.append(line + "\n");
+		}
+	}
+
+	return output;
+}
+
+void matrixApp(MyMatrix3 t_matrix)
+{
+
+	for (int index = 0; index < 36; index++)
+	{
+		MyVector3 t_vector = MyVector3(vertex[index].coordinate[0], vertex[index].coordinate[1], vertex[index].coordinate[2]);
+
+		t_vector = t_matrix * t_vector;
+
+		vertex[index].coordinate[0] = t_vector.x;
+		vertex[index].coordinate[1] = t_vector.y;
+		vertex[index].coordinate[2] = t_vector.z;
+	}
+}
